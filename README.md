@@ -1,4 +1,12 @@
 # Design Den - designden.space
+## URGENT Needs
+1.  get this working with SQL database. the datbase should be encrypted and using 256 BIT AES
+2. get this working with transactional email via mailgun
+3. setup demo forms
+4. restrict account registration eamils to the following domains: @designden.space, @parish.org, and @student.parish.org
+5. Remove student ID field
+
+
 ## Intro
 build a react web app for a school called "The Design Den"
 the homepage should have two buttons create an account and Login
@@ -37,10 +45,14 @@ View everything cannot create
 5. Account Type
 6. only users on a certain domain are able to create accounts
 
+
 ## Courses
 Filters
 1. Year
-2. Term
+2. Terms
+    a. trimester 1
+    b. trimester 2
+    c. trimester 3
 3. Course
 
 ### Course Content
@@ -56,3 +68,25 @@ Each course is comprised of a series of forms (quizzes) which the student must t
 1. The ability to design and create forms
 2. All standard HTML Form elements needed including file upload
 3. Include a signature field where students can sign using mouse/pen/finger their name
+4. integrate sample forms.
+
+
+## Key features
+1. Students certify themselves
+2. admin certify students
+3. search
+4. transactional emails for password resets and completed forms
+    a. automated and easy forgot password reset emails
+    b. integrate mailgun.com
+5. quickly create student
+    - id
+    - name
+    - email
+6. assign students coures
+7. asdsign forms
+8. all data on the server.
+9. transational emails to be sent
+    a. new account
+    b. forgot password
+10. restrict emails to @designden.space, @parish.org, and @student.parish.org
+11. SQL encrypted 256-AES salted hash
