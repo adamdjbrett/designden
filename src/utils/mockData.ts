@@ -3,50 +3,50 @@
 
 export const mockStudents = [
   {
-    id: '1',
-    name: 'John Doe',
-    email: 'john@designden.space',
-    studentId: 'S12345',
-    avatarUrl: 'https://i.pravatar.cc/150?u=john'
+    id: 'D100000001',
+    name: 'Clark Kent',
+    email: 'clark.kent@designden.space',
+    studentId: 'D100000001',
+    avatarUrl: 'https://i.pravatar.cc/150?u=clark.kent'
   },
   {
-    id: '2',
-    name: 'Jane Smith',
-    email: 'jane@designden.space',
-    studentId: 'S67890',
-    avatarUrl: 'https://i.pravatar.cc/150?u=jane'
+    id: 'D100000002',
+    name: 'Bruce Wayne',
+    email: 'bruce.wayne@designden.space',
+    studentId: 'D100000002',
+    avatarUrl: 'https://i.pravatar.cc/150?u=bruce.wayne'
   },
   {
-    id: '3',
-    name: 'Alex Johnson',
-    email: 'alex@designden.space',
-    studentId: 'S24680',
-    avatarUrl: 'https://i.pravatar.cc/150?u=alex'
+    id: 'D100000003',
+    name: 'Diana Prince',
+    email: 'diana.prince@designden.space',
+    studentId: 'D100000003',
+    avatarUrl: 'https://i.pravatar.cc/150?u=diana.prince'
   },
   {
-    id: '4',
-    name: 'Sam Brown',
-    email: 'sam@designden.space',
-    studentId: 'S13579',
-    avatarUrl: 'https://i.pravatar.cc/150?u=sam'
+    id: 'D100000013',
+    name: 'Kara Danvers',
+    email: 'kara.danvers@designden.space',
+    studentId: 'D100000013',
+    avatarUrl: 'https://i.pravatar.cc/150?u=kara.danvers'
   },
   {
-    id: '5',
-    name: 'Taylor Lee',
-    email: 'taylor@designden.space',
-    studentId: 'S97531',
-    avatarUrl: 'https://i.pravatar.cc/150?u=taylor'
+    id: 'D100000027',
+    name: 'Peter Parker',
+    email: 'peter.parker@designden.space',
+    studentId: 'D100000027',
+    avatarUrl: 'https://i.pravatar.cc/150?u=peter.parker'
   }
 ];
 
 export const mockCourses = [
   {
-    id: '1',
+    id: 'DSGN101',
     name: 'Introduction to Design',
     description: 'Fundamentals of design principles and elements',
     year: '2025',
-    term: 'Spring',
-    enrolledStudents: ['1', '3', '5'],
+    term: 'Fall',
+    enrolledStudents: ['D100000001', 'D100000003', 'D100000013'],
     completionRate: 72,
     forms: [
       { id: '101', name: 'Design Software Basics', status: 'completed' },
@@ -55,12 +55,12 @@ export const mockCourses = [
     ]
   },
   {
-    id: '2',
+    id: 'DSGN201',
     name: 'Advanced Typography',
     description: 'In-depth study of typography in modern design',
     year: '2025',
-    term: 'Spring',
-    enrolledStudents: ['2', '4'],
+    term: 'Winter',
+    enrolledStudents: ['D100000002', 'D100000027'],
     completionRate: 45,
     forms: [
       { id: '201', name: 'Font Creation Tools', status: 'completed' },
@@ -70,12 +70,12 @@ export const mockCourses = [
     ]
   },
   {
-    id: '3',
+    id: 'DSGN301',
     name: 'Visual Communication',
     description: 'Effective communication through visual design',
-    year: '2025',
-    term: 'Summer',
-    enrolledStudents: ['1', '2', '3', '4', '5'],
+    year: '2026',
+    term: 'Spring',
+    enrolledStudents: ['D100000001', 'D100000002', 'D100000003', 'D100000013', 'D100000027'],
     completionRate: 30,
     forms: [
       { id: '301', name: 'Visual Storytelling', status: 'completed' },
@@ -88,12 +88,12 @@ export const mockCourses = [
 // Student view of courses with more detailed form information
 export const mockStudentCourses = [
   {
-    id: '1',
+    id: 'DSGN101',
     name: 'Introduction to Design',
     description: 'Fundamentals of design principles and elements',
     year: '2025',
-    term: 'Spring',
-    enrolledStudents: ['1', '3', '5'],
+    term: 'Fall',
+    enrolledStudents: ['D100000001', 'D100000003', 'D100000013'],
     forms: [
       { 
         id: '101', 
@@ -119,12 +119,12 @@ export const mockStudentCourses = [
     ]
   },
   {
-    id: '2',
+    id: 'DSGN201',
     name: 'Advanced Typography',
     description: 'In-depth study of typography in modern design',
     year: '2025',
-    term: 'Spring',
-    enrolledStudents: ['2', '4'],
+    term: 'Winter',
+    enrolledStudents: ['D100000002', 'D100000027'],
     forms: [
       { 
         id: '201', 
@@ -157,12 +157,12 @@ export const mockStudentCourses = [
     ]
   },
   {
-    id: '3',
+    id: 'DSGN301',
     name: 'Visual Communication',
     description: 'Effective communication through visual design',
-    year: '2025',
-    term: 'Summer',
-    enrolledStudents: ['1', '2', '3', '4', '5'],
+    year: '2026',
+    term: 'Spring',
+    enrolledStudents: ['D100000001', 'D100000002', 'D100000003', 'D100000013', 'D100000027'],
     forms: [
       { 
         id: '301', 
@@ -271,3 +271,19 @@ export const mockFormTemplate = {
     }
   ]
 };
+
+// Available academic terms
+export const academicTerms = [
+  { year: '2025-2026', term: 'Fall' },
+  { year: '2025-2026', term: 'Winter' },
+  { year: '2025-2026', term: 'Spring' },
+  { year: '2025-2026', term: 'Summer' },
+  { year: '2026-2027', term: 'Fall' },
+  { year: '2026-2027', term: 'Winter' },
+  { year: '2026-2027', term: 'Spring' },
+  { year: '2026-2027', term: 'Summer' },
+  { year: '2027-2028', term: 'Fall' },
+  { year: '2027-2028', term: 'Winter' },
+  { year: '2027-2028', term: 'Spring' },
+  { year: '2027-2028', term: 'Summer' }
+];
