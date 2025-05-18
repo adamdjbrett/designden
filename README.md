@@ -1,4 +1,4 @@
-# Design Den
+# Design Den - designden.space
 ## Intro
 build a react web app for a school called "The Design Den"
 the homepage should have two buttons create an account and Login
